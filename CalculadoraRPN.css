@@ -1,0 +1,101 @@
+/*Estilo css para calculadora RPN UO278036*/
+
+/* Especificidad (0,0,1) */
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30em;
+    color: black;
+    background-color: #927654;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+/* Especificidad (0,0,1) */
+h1 {
+    text-align: center;
+}
+
+/* Especificidad (0,0,1) */
+section {
+    align-self: center;
+    color: black;
+    background-color: rgb(134, 77, 172);
+    text-align: center;
+    margin-bottom: 0.1em;
+
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 2em;
+    border-width: 0.5em;
+    
+
+}
+/* Especificidad (0,0,1) */
+label{
+    color: azure;
+    background-color:#784780
+}
+
+/* Especificidad (0,0,1) */
+form {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 0.75em;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    border: 0.3em solid rgb(61, 0, 62);
+    color: azure;
+    background-color: #784780
+}
+/* Especificidad (0,0,1) */
+textarea{
+    resize: none;
+    grid-column: span 5;
+}
+
+/* Especificidad (0,1,1) */
+input[type=button], input[type=submit] {
+    color: black;
+    background-color: #dddddd;
+    
+
+    box-shadow: 0 0.2em black;
+}
+
+/* Especificidad (0,1,1) */
+input[type=button] {
+
+    width: 100%;
+
+    font-size: 1.2em;
+    border: 0.1em solid black;
+}
+
+
+/* Especificidad (0,1,1) */
+input[value="Enter"]
+{
+    color: white;
+    background-color: #B3001B;
+    grid-column: span 2;
+}
+
+
+/* Especificidad (0,1,1) */
+input[type=text] {
+    grid-column: span 5;
+
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+
+    width: 100%;
+
+    font-size: 4em;
+    text-align: right;
+}

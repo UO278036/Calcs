@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset = "UTF-8"/>
+        <meta name = "author" content = "Raúl Fernández España"/>
+        <meta name = "description" content = "Calculadora Notacion Polaca Inversa"/>
+        <meta name = "keywords" content = "Calculadora,Polaca,Inversa"/>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+        <title>Calculadora RPN</title>
+
+        <script src="CalculadoraRPN.js"> </script>
+        <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    </head>
+    <body>
+        <section>
+            <header>
+                <h1>Calculadora RPN</h1>
+            </header>
+
+            <form>
+                <label for="pantalla"> <strong>Inversa</strong> </label>
+                <textarea id="pantalla" rows="10" readonly> </textarea>
+
+                <label for="entrada"> <strong> Introduce: </strong> </label>
+                <input id="entrada" type="text" value="0" readonly />
+                
+         
+                <input type="button" value="x^y" onClick = "CALC.potencia()" />
+                <input type="button" value="sin" onClick = "CALC.sinArc()" />
+                <input type="button" value="cos" onClick = "CALC.cosArc()" />
+                <input type="button" value="tan" onClick = "CALC.tanArc()" />
+                <input type="button" value="Mod" onClick = "CALC.modulo()" />
+                <input type="button" value="x^2" onClick = "CALC.potencia2()" />
+                <input type="button" value="n!" onClick = "CALC.fact()" />
+                <input type="button" value="√" onClick = "CALC.raiz()" />
+                <input type="button" value="Enter" onClick = "CALC.enter()" />
+            </form>
+            <form>
+                <input type="button" value="e" onClick = "CALC.e()" />
+                <input type="button" value="7" onClick = "CALC.digitos(7)" />
+                <input type="button" value="8" onClick = "CALC.digitos(8)" />
+                <input type="button" value="9" onClick = "CALC.digitos(9)" />
+                <input type="button" value="÷" onClick = "CALC.division()" />
+
+                <input type="button" value="+/-" onClick = "CALC.masMenos()" />
+                <input type="button" value="4" onClick = "CALC.digitos(4)" />
+                <input type="button" value="5" onClick = "CALC.digitos(5)" />
+                <input type="button" value="6" onClick = "CALC.digitos(6)" />
+                <input type="button" value="x" onClick = "CALC.multiplicacion()" />
+
+                <input type="button" value="CE" onClick = "CALC.borrarNumero()" />
+                <input type="button" value="1" onClick = "CALC.digitos(1)" />
+                <input type="button" value="2" onClick = "CALC.digitos(2)" />
+                <input type="button" value="3" onClick = "CALC.digitos(3)" />
+                <input type="button" value="-" onClick = "CALC.resta()" />
+
+                <input type="button" value="C" onClick = "CALC.borrar()" />
+                <input type="button" value="0" onClick = "CALC.digitos(0)" />
+                <input type="button" value="." onClick = "CALC.punto()" />
+                <input type="button" value="↑" onClick = "CALC.shift()" />
+                <input type="button" value="+" onClick = "CALC.suma()" />
+            </form>
+        </section>
+    </body>
+</html>
